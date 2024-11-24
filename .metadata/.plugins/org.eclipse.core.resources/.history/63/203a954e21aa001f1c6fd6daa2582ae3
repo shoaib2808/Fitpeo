@@ -1,0 +1,16 @@
+package utils;
+
+public class constants {
+
+	private  String Website = "https://www.fitpeo.com";
+	private  String expectedRevenueValue = "$75600";
+	
+	
+	public Static String getWebsite() {
+		return Website;
+	}
+	public Static String getExpectedRevenueValue() {
+		return expectedRevenueValue;
+	}
+	
+}

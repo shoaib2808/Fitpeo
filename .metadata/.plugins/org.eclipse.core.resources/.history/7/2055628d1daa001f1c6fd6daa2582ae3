@@ -1,0 +1,19 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class loginpage {
+
+	By Revenuepage = By.xpath("/html/body/div[1]/div/header/div/div[3]/div[6]/a/div");
+	By Slider = By.xpath("//*[@class=\"MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1sfugkh\"]");
+	By input = By.xpath("//*[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng']");
+	
+	By Boxes = By.xpath("//*[@class=\\\"MuiBox-root css-1eynrej\\\"]");
+	
+	public WebElement getRevenuepage() {
+		return (WebElement) Revenuepage;
+		
+	}
+}

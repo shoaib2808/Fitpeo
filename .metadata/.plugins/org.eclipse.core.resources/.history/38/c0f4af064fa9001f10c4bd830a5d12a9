@@ -1,0 +1,43 @@
+package stepDefination;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import pages.Base;
+
+
+public class loginstepdef extends Base {
+
+
+@Given("Navigate to FitPeo website")
+public void navigate_to_fit_peo_website() {
+   driver.get("https://www.fitpeo.com");
+   driver.manage().window().maximize();
+}
+
+@Then("Navigate to Revenue calculator page")
+public void navigate_to_revenue_calculator_page() throws InterruptedException {
+    // Write code here that turns the phrase above into concrete actions
+//    throw new io.cucumber.java.PendingException();
+	driver.findElement(By.xpath("/html/body/div[1]/div/header/div/div[3]/div[6]/a/div")).click();
+	Thread.sleep(5000);
+}
+
+
+
+@Then("Scroll page till slider is visible")
+public void Adjust_the_slider() {
+    JavascriptExecutor js = (JavascriptExecutor)driver;
+    js.executeScript("window.scrollBy(0,350)");
+}
+
+@Then("Adjust the value of slider to (.+)$")
+public void adjut_the_value_slider(String val) {
+	System.out.println(val);
+	driver.findElement(By.xpath("//*[@id=\":r0:\"]")).clear();
+	Thread.sleep(5000);
+//   driver.findElement(By.xpath("//*[@id=\":r0:\"]")).sendKeys("820");
+}
+}

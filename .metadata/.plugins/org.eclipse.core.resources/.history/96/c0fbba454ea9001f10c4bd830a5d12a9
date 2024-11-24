@@ -1,0 +1,14 @@
+@assignment
+
+
+Feature: FitPeo Assigment
+
+Scenario Outline: Login to FitPeo ,adjust revenue calculator value and validate Total Recurring Reimbursement
+	Given Navigate to FitPeo website
+	Then Navigate to Revenue calculator page
+	Then Scroll page till slider is visible
+	Then Adjust the value of slider to <value>
+	
+	Examples:
+	|value|
+	|820  |

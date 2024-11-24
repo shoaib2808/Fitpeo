@@ -1,0 +1,5 @@
+@assignment
+
+Feature: Login to FitPeo ,adjust revenue calculator value and validate Total Recurring Reimbursement
+Given Navigate to FitPeo website
+Then Navigate to Revenue calculator page
